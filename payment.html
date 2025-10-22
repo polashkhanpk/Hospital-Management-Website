@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hospital Dashboard - Payments</title>
+  <link rel="stylesheet" href="re.css">
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <div class="profile">
+        <img src="Polash.png" alt="Profile Picture">
+        <p>Abdul S.</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="dashboard.html"><span class="icon">🏠</span><span class="text">Dashboard</span></a></li>
+          <li><a href="doctor.html"><span class="icon">👨‍⚕️</span><span class="text">Doctors</span></a></li>
+          <li><a href="room.html"><span class="icon">🛏️</span><span class="text">Room / Seat</span></a></li>
+          <li><a href="lab report.html"><span class="icon">📋</span><span class="text">Report</span></a></li>
+          <li><a href="ambulance.html"><span class="icon">🚑</span><span class="text">Ambulances</span></a></li>
+          <li><a href="#" class="active"><span class="icon">💳</span><span class="text">Payments</span></a></li>
+        </ul>
+      </nav>
+
+      <div class="logout">
+        <a href="Login.html">LOGOUT</a>
+      </div>
+    </div>
+
+    <div class="main-content">
+      <div class="header">
+        <div class="logo">
+          <img src="Hospital Logo.png" alt="Hospital Logo">
+          <h1>evercare Hospital</h1>
+        </div>
+        <div class="user-icon">
+          <img src="Polash.png" alt="User Icon">
+        </div>
+      </div>
+
+      <div class="statistics">
+        <div class="stat-item">
+          <img src="doctor.png" alt="Doctors">
+          <p>5 Doctors</p>
+        </div>
+        <div class="stat-item">
+          <img src="patient.png" alt="Patients">
+          <p>13 Patients</p>
+        </div>
+        <div class="stat-item">
+          <img src="report.png" alt="Reports">
+          <p>9 Reports</p>
+        </div>
+        <div class="stat-item">
+          <img src="paymentI.png" alt="Payments">
+          <p>46081 Payments</p>
+        </div>
+      </div>
+      <div class="registration-form">
+        <h2>Payments</h2>
+        <form id="paymentForm">
+          <input type="number" id="patientId" placeholder="Patient ID" required>
+          <input type="text" id="patientName" placeholder="Patient Name" required>
+          <input type="number" id="mobile" placeholder="Mobile Number" required>
+          <input type="number" id="doctorFee" placeholder="Doctor's Fee" required>
+          <input type="number" id="testCost" placeholder="Test Report Cost" required>
+          <input type="number" id="seatCost" placeholder="Seat/Room Cost" required>
+          <input type="number" id="otCharge" placeholder="OT Charge">
+          <input type="number" id="otherCost" placeholder="Others Cost">
+          <input type="number" id="tax" placeholder="Tax">
+          <input type="number" id="discount" placeholder="Discount">
+          <input type="number" id="totalCost" placeholder="Total Cost" readonly>
+
+          <button type="submit">Click for Payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="scr.js"></script>
+</body>
+</html>
